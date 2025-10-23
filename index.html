@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Socket Room Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Socket Room Chat</h1>
+      <div id="roomInfo"></div>
+    </header>
+
+    <main id="main">
+      <section id="joinSection" class="card">
+        <h2>Create or Join a Room</h2>
+        <div class="row">
+          <input id="username" placeholder="Your name" />
+        </div>
+        <div class="row">
+          <button id="createBtn">Create New Room</button>
+          <input id="roomInput" placeholder="Enter room code" />
+          <button id="joinBtn">Join Room</button>
+        </div>
+        <p class="muted">Or open the same page on another device and enter the same room code.</p>
+      </section>
+
+      <section id="chatSection" class="card hidden">
+        <div class="chatHeader">
+          <div>
+            <strong id="roomCodeDisplay"></strong>
+            <small id="membersCount"></small>
+          </div>
+          <div class="actions">
+            <button id="inviteBtn">Invite (WhatsApp)</button>
+            <button id="leaveBtn">Leave</button>
+          </div>
+        </div>
+
+        <div id="messages" class="messages"></div>
+
+        <form id="messageForm" class="message-form">
+          <input id="messageInput" placeholder="Type a message..." autocomplete="off" />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with ❤️ — Socket.IO (Node.js)</p>
+    </footer>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>

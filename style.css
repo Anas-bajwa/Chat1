@@ -1,0 +1,20 @@
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;padding:20px;background:linear-gradient(135deg,#f6f8ff,#eef6ff);margin:0}
+.app{max-width:720px;margin:0 auto}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.card{background:#fff;padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(20,20,50,0.06)}
+.row{display:flex;gap:8px;margin-bottom:8px}
+input{flex:1;padding:10px;border:1px solid #e6e9f2;border-radius:8px;font-size:15px}
+button{background:#2563eb;color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
+button[disabled]{opacity:0.6;cursor:not-allowed}
+.hidden{display:none}
+.messages{height:360px;overflow:auto;padding:12px;border:1px solid #f0f3ff;border-radius:10px;margin:12px 0;background:linear-gradient(180deg,#fff,#fbfdff)}
+.message{margin-bottom:10px}
+.message .meta{font-size:12px;color:#666}
+.message.you{text-align:right}
+.chatHeader{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.actions{display:flex;gap:8px}
+.message-form{display:flex;gap:8px}
+.message-form input{flex:1}
+.muted{color:#6b7280;font-size:13px}
+footer{text-align:center;margin-top:16px;color:#6b7280;font-size:13px}
